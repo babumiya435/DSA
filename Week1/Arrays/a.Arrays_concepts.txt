@@ -1,0 +1,9 @@
+What is Array in Data Structure?
+Concept of Array
+Why do we need arrays?
+Creating an Array in Javascript/Python
+Ways to Declare an Array in Javascript/Python
+Array Operations in Javascript/Python
+    - JS - (push, shift, pop, unshift)
+    - PY - (balance.insert(index, value), balance.remove(value), arrayName.index(value), arrayName.udpate(index, value))
+

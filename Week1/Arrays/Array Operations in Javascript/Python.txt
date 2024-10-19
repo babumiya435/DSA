@@ -1,0 +1,217 @@
+Here’s a comprehensive list of common array operations in JavaScript and Python, along with their time and space complexities:
+
+---
+
+### **Array Operations in JavaScript**
+
+1. **Accessing an Element by Index**  
+   ```javascript
+   let value = arr[i];
+   ```
+   - **Time Complexity**: `O(1)`
+   - **Space Complexity**: `O(1)`
+
+2. **Modifying an Element by Index**  
+   ```javascript
+   arr[i] = newValue;
+   ```
+   - **Time Complexity**: `O(1)`
+   - **Space Complexity**: `O(1)`
+
+3. **Appending an Element (`push()`)**  
+   Adds an element at the end of the array.
+   ```javascript
+   arr.push(5);
+   ```
+   - **Time Complexity**: `O(1)` (amortized, as arrays may need resizing)
+   - **Space Complexity**: `O(1)` (if no resizing) or `O(n)` (if resizing)
+
+4. **Removing the Last Element (`pop()`)**  
+   Removes and returns the last element.
+   ```javascript
+   arr.pop();
+   ```
+   - **Time Complexity**: `O(1)`
+   - **Space Complexity**: `O(1)`
+
+5. **Inserting at the Beginning (`unshift()`)**  
+   Adds an element to the start, shifting all other elements.
+   ```javascript
+   arr.unshift(0);
+   ```
+   - **Time Complexity**: `O(n)` (since shifting is required)
+   - **Space Complexity**: `O(1)`
+
+6. **Removing the First Element (`shift()`)**  
+   Removes and returns the first element, shifting all other elements.
+   ```javascript
+   arr.shift();
+   ```
+   - **Time Complexity**: `O(n)` (shifting required)
+   - **Space Complexity**: `O(1)`
+
+7. **Inserting or Removing in the Middle (`splice()`)**  
+   Modifies the array by removing, adding, or replacing elements.
+   ```javascript
+   arr.splice(2, 1, 'newElement');  // Remove 1 item at index 2 and insert 'newElement'
+   ```
+   - **Time Complexity**: `O(n)` (shifting needed)
+   - **Space Complexity**: `O(n)` (depends on the number of elements added/removed)
+
+8. **Concatenating Arrays (`concat()`)**  
+   Merges two arrays into one.
+   ```javascript
+   let newArr = arr1.concat(arr2);
+   ```
+   - **Time Complexity**: `O(n + m)` (where `n` and `m` are the lengths of the arrays)
+   - **Space Complexity**: `O(n + m)`
+
+9. **Finding an Element (`indexOf()`, `includes()`)**  
+   Searches for an element by value.
+   ```javascript
+   let index = arr.indexOf(5);  // Returns -1 if not found
+   let found = arr.includes(5);
+   ```
+   - **Time Complexity**: `O(n)`
+   - **Space Complexity**: `O(1)`
+
+10. **Reversing an Array (`reverse()`)**  
+    Reverses the array in place.
+    ```javascript
+    arr.reverse();
+    ```
+    - **Time Complexity**: `O(n)`
+    - **Space Complexity**: `O(1)`
+
+11. **Sorting an Array (`sort()`)**  
+    Sorts the array (by default, lexicographically).
+    ```javascript
+    arr.sort();
+    ```
+    - **Time Complexity**: `O(n log n)`
+    - **Space Complexity**: `O(n)` (or `O(1)` depending on the algorithm used)
+
+---
+
+### **Array Operations in Python**
+
+1. **Accessing an Element by Index**  
+   ```python
+   value = arr[i]
+   ```
+   - **Time Complexity**: `O(1)`
+   - **Space Complexity**: `O(1)`
+
+2. **Modifying an Element by Index**  
+   ```python
+   arr[i] = newValue
+   ```
+   - **Time Complexity**: `O(1)`
+   - **Space Complexity**: `O(1)`
+
+3. **Appending an Element (`append()`)**  
+   Adds an element to the end of the list.
+   ```python
+   arr.append(5)
+   ```
+   - **Time Complexity**: `O(1)` (amortized)
+   - **Space Complexity**: `O(1)`
+
+4. **Removing the Last Element (`pop()`)**  
+   Removes and returns the last element.
+   ```python
+   arr.pop()
+   ```
+   - **Time Complexity**: `O(1)`
+   - **Space Complexity**: `O(1)`
+
+5. **Inserting an Element at the Beginning (`insert()`)**  
+   Inserts an element at the specified index.
+   ```python
+   arr.insert(0, value)
+   ```
+   - **Time Complexity**: `O(n)` (due to shifting)
+   - **Space Complexity**: `O(1)`
+
+6. **Removing an Element by Index (`pop(i)`)**  
+   Removes and returns the element at the specified index.
+   ```python
+   arr.pop(i)
+   ```
+   - **Time Complexity**: `O(n)` (due to shifting)
+   - **Space Complexity**: `O(1)`
+
+7. **Concatenating Lists (`+`)**  
+   Concatenates two lists.
+   ```python
+   newArr = arr1 + arr2
+   ```
+   - **Time Complexity**: `O(n + m)` (where `n` and `m` are the lengths of the lists)
+   - **Space Complexity**: `O(n + m)`
+
+8. **Slicing a List (`[:]`)**  
+   Extracts a portion of the list.
+   ```python
+   subArr = arr[1:3]
+   ```
+   - **Time Complexity**: `O(k)` (where `k` is the size of the slice)
+   - **Space Complexity**: `O(k)`
+
+9. **Finding an Element (`index()`, `in`)**  
+   Searches for an element by value.
+   ```python
+   index = arr.index(5)
+   found = 5 in arr
+   ```
+   - **Time Complexity**: `O(n)`
+   - **Space Complexity**: `O(1)`
+
+10. **Reversing a List (`reverse()`)**  
+    Reverses the list in place.
+    ```python
+    arr.reverse()
+    ```
+    - **Time Complexity**: `O(n)`
+    - **Space Complexity**: `O(1)`
+
+11. **Sorting a List (`sort()`)**  
+    Sorts the list in place.
+    ```python
+    arr.sort()
+    ```
+    - **Time Complexity**: `O(n log n)`
+    - **Space Complexity**: `O(1)` (in-place sorting)
+
+12. **Copying a List (`copy()`)**  
+    Returns a shallow copy of the list.
+    ```python
+    newArr = arr.copy()
+    ```
+    - **Time Complexity**: `O(n)`
+    - **Space Complexity**: `O(n)`
+
+13. **Extending a List (`extend()`)**  
+    Adds all elements from another list.
+    ```python
+    arr.extend([5, 6])
+    ```
+    - **Time Complexity**: `O(m)` (where `m` is the length of the added list)
+    - **Space Complexity**: `O(m)`
+
+---
+
+### Summary of Time Complexities
+
+| Operation                  | Time Complexity (JS) | Time Complexity (Python) | Space Complexity (Both) |
+|----------------------------|----------------------|---------------------------|-------------------------|
+| Access by Index             | `O(1)`               | `O(1)`                    | `O(1)`                  |
+| Modify by Index             | `O(1)`               | `O(1)`                    | `O(1)`                  |
+| Append                      | `O(1)` (amortized)   | `O(1)` (amortized)        | `O(1)`                  |
+| Pop                         | `O(1)`               | `O(1)`                    | `O(1)`                  |
+| Insert (Start/Middle)       | `O(n)`               | `O(n)`                    | `O(1)`                  |
+| Remove (First/Specific)     | `O(n)`               | `O(n)`                    | `O(1)`                  |
+| Concatenate                 | `O(n + m)`           | `O(n + m)`                | `O(n + m)`              |
+| Reverse                     | `O(n)`               | `O(n)`                    | `O(1)`                  |
+| Sort                        | `O(n log n)`         | `O(n log n)`              | `O(n)` (JS), `O(1)` (Py)|
+
+This table highlights that arrays (or lists) offer very efficient operations for accessing and modifying elements, while operations that require shifting elements (like inserting/removing at the beginning or middle) can be costly.
