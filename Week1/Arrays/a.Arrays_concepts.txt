@@ -1,3 +1,5 @@
+https://www.techinterviewhandbook.org/algorithms/array/
+
 What is Array in Data Structure?
 Concept of Array
 Why do we need arrays?
@@ -6,4 +8,17 @@ Ways to Declare an Array in Javascript/Python
 Array Operations in Javascript/Python
     - JS - (push, shift, pop, unshift)
     - PY - (balance.insert(index, value), balance.remove(value), arrayName.index(value), arrayName.udpate(index, value))
+
+Common terms: Subarray(elements with ordered sequesnce), Subsequence(elements without order)
+
+Time Complexity:
+access using index - O(1)
+search using value - O(n)
+search(sorted array) - O(log n) - binary search
+insert - O(n)
+insert at the end - O(1) - array.push(value)
+insert at the start - O(n) - array.unshift(value)
+remove - O(n)
+remove from the end - O(1) - array.pop()
+remove from the start - O(n) - array.shift()
 
