@@ -1,0 +1,25 @@
+https://leetcode.com/problems/sort-colors/ -----------> M
+
+https://leetcode.com/problems/palindromic-substrings/ -----------> M
+
+https://leetcode.com/problems/merge-sorted-array/description/  -----------> E
+
+Pair Sum Problems: Find two numbers in a sorted array that sum up to a target value.
+
+Triplet Sum Problems: Extend the pair sum problem to three numbers.
+
+Valid Palindrome: Use two pointers to check if a string is a palindrome.
+
+Remove Duplicates from a Sorted Array: Use one pointer to traverse and another to track unique elements.
+
+Container with Most Water: Find the max area using two pointers to compute the area between vertical lines in an array.
+
+Cycle Detection in Linked List (Tortoise and Hare algorithm).
+
+LeetCode: Two Sum II
+
+LeetCode: 3Sum
+
+LeetCode: Valid Palindrome
+
+LeetCode: Linked List Cycle
