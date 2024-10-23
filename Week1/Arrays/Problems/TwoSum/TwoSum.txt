@@ -1,0 +1,29 @@
+-------------- Two Sum -----------------------
+create basic problem statement : finding pair of elements which sums up to target without including same element twice.
+1.UP - i/p's, o/p's
+2.Ask clarification questions
+    - is array is emplty ?
+    - is array sorted in ASC/DCS ?
+    - can array contains duplicate values ?
+    - can array contains -ve integers ?
+    - can array have multiple solutons ?
+    - which order we can print the indices (ASC/DCS) ?
+    - print the indices directly or as array [i,j]
+3.come up with the brute force apprach:
+    Brute Force apprach O(n^2)O(nlogn), O(1)
+    - find all possible pairs without including same element twice.
+    - for each pair find their sum
+    - for each sum compare it with target integers
+    - if it matches print [i,j]
+    - nothing matches print 0 --> not needed
+4.Come up with optimized approach
+    Two Pointer Apprach O(nlogn), O(1)
+    - sort the array in ASC
+    - l, r pointers add values and compare with the target
+    - a[l]+a[r] > t --> r--
+        else l++;
+    Hash Map approach O(n), O(n)
+    - create a empty Map
+    - iterate through a given array and check for t-a[i] is present in a Map
+    - if yes -> return [map.get(t-a[i], i)] - value: index format
+    - if no -> push the current value to the map for future referece (map.set(value,index))
