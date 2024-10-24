@@ -28,13 +28,13 @@ function twoSum1(nums, target){
         // check for the expected condition met
         // if yes return [l,r]
         if(sum === target){
-            return [l,r]
+            return [l,r];
         }
         // if no check for sum > t --> r--, sum < t --> l++
         if(sum > target){
             r--;
         }else{
-            l++
+            l++;
         }
     } 
 }
