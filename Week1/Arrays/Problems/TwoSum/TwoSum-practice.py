@@ -40,10 +40,11 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
             #     return [original.index(nums[r]), original.index(nums[r])]
             if sum == target:
                 if nums[l] == nums[r]:
-                    if n == 2:
-                        return [l, r]
-                    else:
-                        return [original.index(nums[l]), n-1-(original[::-1]).index(nums[l])]
+                    # if n == 2:
+                    #     return [l, r]
+                    # else:
+                    #     return [original.index(nums[l]), n-1-(original[::-1]).index(nums[l])]
+                    return [original.index(nums[l]), n-1-(original[::-1]).index(nums[l])]
                 else:
                     return [original.index(nums[l]), original.index(nums[r])]
             # check sum > target
